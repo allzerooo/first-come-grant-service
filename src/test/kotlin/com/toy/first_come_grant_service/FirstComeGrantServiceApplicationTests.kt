@@ -10,4 +10,9 @@ class FirstComeGrantServiceApplicationTests {
 	fun contextLoads() {
 	}
 
+	@Test
+	fun `의도적 실패`() {
+		throw AssertionError("CI 실패 테스트")
+	}
+
 }
