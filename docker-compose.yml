@@ -64,6 +64,7 @@ services:
       - GF_USERS_ALLOW_SIGN_UP=false
     volumes:
       - ./docker/grafana/provisioning:/etc/grafana/provisioning
+      - ./docker/grafana/dashboards:/var/lib/grafana/dashboards
       - grafana_data:/var/lib/grafana
 
   otel-collector:
