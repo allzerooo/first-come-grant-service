@@ -15,3 +15,10 @@ management:
       probes:
         enabled: true
       show-details: always
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%X{requestId:-}] [%X{traceId:-}] %-5level %logger{36} - %msg%n"
+  level:
+    root: INFO
+    com.toy.first_come_grant_service: DEBUG
